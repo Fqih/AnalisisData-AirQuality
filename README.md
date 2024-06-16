@@ -1,19 +1,45 @@
 
 # Air Quality: Guanyuan
 
-Data Diri:
-Nama    : Muhammad Faqih Hakim 
+Dashboard:
 
-Email : mhmdfkih21@gmail.com
-
-link Dashboard : https://fqih-analisisdata-dashboarddashboard-qonifn.streamlit.app/
+https://fqih-analisisdata-dashboarddashboard-qonifn.streamlit.app/
 
 
+## Library 
+- Seaborn
 
-## Running Tests
+- Matplotlib
 
-To run tests, run the following command
+- Numpy
 
+- Pandas
+
+- Streamlit
+
+
+## Setup Environment
+
+With anaconda
+```bash
+  conda create -n name-ds python=3.9
+  conda activate name-ds
+```
+With venv
+```bash
+  py -m venv namevenv
+  namevenv\Scripts\activate
+```
+after your activate you can install package with
+```bash
+  pip install -r requerments.txt
+```
+## Running dashboard
+Before running the dashboard, you need to change the dashboard directory.
+```bash
+    cd dashboard
+```
+To execute tests, use the following command.
 ```bash
     streamlit run dashboard.py
 ```
@@ -29,3 +55,9 @@ To run tests, run the following command
 
 If you have any feedback, please reach out to me at mhmdfkih21@gmail.com
 
+
+## About me
+
+Name    : Muhammad Faqih Hakim 
+
+Email : mhmdfkih21@gmail.com
