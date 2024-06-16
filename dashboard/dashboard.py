@@ -5,7 +5,8 @@ import seaborn as sns
 
 st.set_page_config(page_title="Air Quality Analysis")
 
-data = pd.read_csv('./all_data.csv')
+# Load data from GitHub repository
+data = pd.read_csv('https://raw.githubusercontent.com/Fqih/AnalisisData/main/dashboard/all_data.csv')
 data['date'] = pd.to_datetime(data[['year', 'month', 'day', 'hour']])
 
 st.sidebar.title('Filters')
