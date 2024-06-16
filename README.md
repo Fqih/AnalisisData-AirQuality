@@ -6,6 +6,8 @@ Nama    : Muhammad Faqih Hakim
 
 Email : mhmdfkih21@gmail.com
 
+link Dashboard : https://fqih-analisisdata-dashboarddashboard-qonifn.streamlit.app/
+
 
 
 ## Running Tests
