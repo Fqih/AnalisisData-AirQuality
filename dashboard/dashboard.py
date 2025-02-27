@@ -46,12 +46,11 @@ scaled_features = scaler_Robust.transform(filteredData[f])
 predicted_O3 = best_model.predict(scaled_features)
 
 
-# Skalakan fitur sebelum prediksi
 scaled_features = scaler_Robust.transform(filteredData[f])
 predicted_O3 = best_model.predict(scaled_features)
 
 # Tambahkan hasil prediksi ke dataframe
-filteredData["Predicted O3"] = predicted_O3
+filteredData.loc[:, "Predicted O3"] = best_model.predict(scaled_features)
 
 # Fungsi untuk membuat dataframe tren harian
 def createDailyPm25Df(df):
@@ -77,10 +76,6 @@ st.markdown(
 )
 
 st.write(data)
-
-# Prediksi kadar O3
-predicted_O3 = best_model.predict(scaled_features)
-filteredData["Predicted O3"] = predicted_O3
 
 st.markdown(
     """
