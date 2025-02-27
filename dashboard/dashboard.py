@@ -5,8 +5,8 @@ import seaborn as sns
 import joblib
 from sklearn.preprocessing import RobustScaler
 
-model_path = "Model/best_xgboost_model.pkl"
-scaler_path = "Scaler/robust_scaler.pkl"
+model_path = "dashboard/Model/best_xgboost_model.pkl"
+scaler_path = "dashboard/Scaler/robust_scaler.pkl"
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
