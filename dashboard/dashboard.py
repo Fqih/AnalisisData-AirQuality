@@ -1,10 +1,10 @@
 import streamlit as st
-st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 from sklearn.preprocessing import RobustScaler
+st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 
 model_path = "dashboard/Model/best_xgboost_model.pkl"
 scaler_path = "dashboard/Scaler/robust_scaler.pkl"
