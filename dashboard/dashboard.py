@@ -3,12 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
-import os
 from sklearn.preprocessing import RobustScaler
 
-model_path = os.path.abspath("./Model/best_xgboost_model.pkl")
-scaler_path = os.path.abspath("./Scaler/robust_scaler.pkl")
-
+model_path = "Model/best_xgboost_model.pkl"
+scaler_path = "Scaler/robust_scaler.pkl"
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
