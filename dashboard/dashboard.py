@@ -16,7 +16,7 @@ best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
 
 # Load data dari GitHub repository
-data = pd.read_csv('https://raw.githubusercontent.com/Fqih/AnalisisData-AirQuality/refs/heads/main/data/Dashboard_df.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/Fqih/AnalisisData-AirQuality/refs/heads/main/data/final_df.csv')
 data['date'] = pd.to_datetime(data[['year', 'month', 'day', 'hour']])
 
 # Sidebar untuk filter
