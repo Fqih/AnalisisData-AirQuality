@@ -11,15 +11,6 @@ scaler_path = "dashboard/Scaler/robust_scaler.pkl"
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
-# Muat Model dan Scaler
-best_model = joblib.load(model_path)
-scaler_Robust = joblib.load(scaler_path)
-
-st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
-best_model = joblib.load(model_path)
-scaler_Robust = joblib.load(scaler_path)
-
-st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 
 # Load data dari GitHub repository
 data = pd.read_csv('https://raw.githubusercontent.com/Fqih/AnalisisData-AirQuality/refs/heads/main/data/final_df.csv')
