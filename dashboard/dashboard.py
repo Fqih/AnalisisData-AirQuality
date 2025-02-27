@@ -11,8 +11,7 @@ scaler_path = "Scaler/robust_scaler.pkl"
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
 
-st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")model_path = "Model/best_xgboost_model.pkl"
-scaler_path = "Scaler/robust_scaler.pkl"
+st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
