@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -10,8 +11,6 @@ scaler_path = "dashboard/Scaler/robust_scaler.pkl"
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
-
-st.set_page_config(page_title="Air Pollution & Ozone Analysis Dashboard")
 # Muat Model dan Scaler
 best_model = joblib.load(model_path)
 scaler_Robust = joblib.load(scaler_path)
